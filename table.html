@@ -1,0 +1,10 @@
+<div>
+	<table border="" cellspacing="" cellpadding="">
+		<tr>
+			<th ng-repeat="tableHead in data.tableHeads">{{tableHead}}</th>
+		</tr>
+		<tr ng-repeat ="item in data.getinfo.tabaleData">
+			<td ng-repeat="info in data.tableKeys">{{item[info]}}</td>
+		</tr>
+	</table>
+</div>

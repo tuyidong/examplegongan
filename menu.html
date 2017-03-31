@@ -1,0 +1,8 @@
+<div>
+	<div ng-repeat="items in data.menuTabData">
+		<div class="menu-tab-one" ng-click="showSecond($index)">{{items.oneLevel}}</div>
+		<div class="tab-two-box">
+			<div class="menu-tab-two" ng-show="isSecondCityShow" ng-repeat="city in items.twoLevel">{{city}}</div>
+		</div>
+	</div>
+</div>

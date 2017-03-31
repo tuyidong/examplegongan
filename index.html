@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>directive</title>
+		<script type="text/javascript" src="lib/angular.js"></script>
+		<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" />
+		<style type="text/css">
+			.select-box{
+				width: 100px;
+				height: 20px;
+				position: relative;
+			}
+			.select-input{
+				width: 100px;
+				height: 20px;
+				border: 1px solid #ccc;
+				color: #CCCCCC;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+				
+			}
+			.option-box{
+				position: absolute;
+				left: 0;
+				top: 22px;
+			}
+			.option-box>div{
+				width: 100px;
+				height: 20px;
+				text-align: center;
+				background: #3D72B3;
+				font-size: 16px;
+				color: #fff;
+				cursor: pointer;
+			}
+			.option-box>input{
+				width: 98px;
+				height: 18px;
+				border: 1px solid #3D72B3;
+				text-align: center;
+				font-size: 16px;
+				color: #000000;
+			}
+			.option-box>div:hover{
+				opacity: 0.8;
+			}
+			/*点击按钮样式*/
+			.chlick-button{
+				border:1px solid #297DBC;
+				background: #FFFFFF;
+				color: #297DBC;
+				border-radius: 4px;
+				height: 30px;
+				font-size: 18px;
+				line-height: 28px;
+				padding-left:20px;
+				padding-right:20px;
+				cursor: pointer;
+			}
+			.chlick-button:hover{
+				border:1px solid #297DBC;
+				background: #297DBC;
+				color: #FFFFFF;
+			}
+			.menu-tab-one{
+				width:200px;
+				height:30px;
+				background: #3D72B3;
+				color: #FFFFFF;
+				font-size: 20px;
+				line-height: 30px;
+				
+			}
+			.menu-tab-two{
+				width:150px;
+				margin-left: 50px;
+				margin-top: 2px;
+				height:20px;
+				background: #297DBC;
+				color: #FFFFFF;
+				font-size: 16px;
+				line-height: 20px;
+			}
+		</style>
+	</head>
+	<body ng-app="app" ng-controller="myController">
+		<selectoption datab="data"></selectoption>
+		</br></br></br></br></br></br></br></br></br></br>
+		<selectoption datab="datab"></selectoption>
+		</br></br></br></br></br></br></br>
+		<button-query data="chlickBtn"></button-query>
+		<button-query data="chlickBtnB"></button-query>
+		<table-grid data="tableSet"></table-grid>
+		<menu-tab data='menuSet'></menu-tab>
+		<script src="app.js"></script>
+	</body>
+</html>
